@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'lib-simple-upload',
-  template: `
-    <p>
-      simple-upload works!
-    </p>
-  `,
+  selector: 'lib-ngx-simple-upload',
+  templateUrl: './simple-upload.component.html',
   styles: [
   ]
 })
