@@ -1,1 +1,11 @@
-<p>hi nam</p>
+<input type="file" class="input-file"
+    [accept]="requiredFileType"
+    [multiple]="multiple"
+    (change)="onFileSelected($event)" #fileUpload>
+    
+<div class="file-upload">
+    {{label}}
+    <button mat-mini-fab color="primary" class="upload-btn" (click)="fileUpload.click()">
+        <mat-icon>{{btnIcon}}</mat-icon>
+    </button>
+</div>
