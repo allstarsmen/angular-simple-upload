@@ -2,6 +2,15 @@
 
 An angular module for file uploads. A simple skeleton that you can easily add to, no extra features, just easy to style upload button.
 
+## Installation
+Install Angular Material UI
+
+    ng add @angular/material
+
+Install the library:
+
+    npm install ngx-simple-upload
+
 ## Usage
 ### In your module:
 
