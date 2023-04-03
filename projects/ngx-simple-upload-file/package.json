@@ -1,6 +1,6 @@
 {
   "name": "ngx-simple-upload",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "peerDependencies": {
     "@angular/common": "^15.2.0",
     "@angular/core": "^15.2.0",
@@ -19,5 +19,10 @@
     "name": "Nam Pham",
     "email": "allstarsmen@gmail.com",
     "url": "https://www.linkedin.com/in/namphamvn/"
-  }
+  },
+  "keywords": [
+    "angular",
+    "upload",
+    "file upload"
+  ]
 }
