@@ -1,24 +1,45 @@
-# SimpleUpload
+# Angular Simple Upload File
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
+An angular module for file uploads. A simple skeleton that you can easily add to, no extra features, just easy to style upload button.
 
-## Code scaffolding
+## Usage
+### In your module:
 
-Run `ng generate component component-name --project simple-upload` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project simple-upload`.
-> Note: Don't forget to add `--project simple-upload` or else it will be added to the default project in your `angular.json` file. 
+    import { NgModule } from '@angular/core';
+    import { BrowserModule } from '@angular/platform-browser';
+    import { AppComponent } from './app.component';
+    import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+    import { SimpleUploadFileModule } from '@nampham/ngx-simple-upload-file';
 
-## Build
+    @NgModule({
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        BrowserModule,
+        SimpleUploadFileModule, <<< Import the module
+        BrowserAnimationsModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
+    })
+    export class AppModule { }
 
-Run `ng build simple-upload` to build the project. The build artifacts will be stored in the `dist/` directory.
+### In your component HTML file:
 
-## Publishing
+    <ngx-simple-upload-file (filesSelected)="onFilesSelected($event)"></ngx-simple-upload-file>
 
-After building your library with `ng build simple-upload`, go to the dist folder `cd dist/simple-upload` and run `npm publish`.
+## Inputs:
 
-## Running unit tests
+| Input   | Default value      |  Value type | Description |
+|---------|--------------------|-------------| ----------- |
+| requiredFileType | '' | String | Exact same as [HTML \<input> accept Attribute](https://www.w3schools.com/tags/att_input_accept.asp) |
+| multiple |    false   |   Boolean | If 'true', allow to select multiple files.|
+| btnIcon | 'attach_file' |    String | [Angular Material icons](https://fonts.google.com/icons?icon.query=attach) |
+| label | 'No file uploaded yet.' |    String | Custom label |
 
-Run `ng test simple-upload` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Events: 
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+| Event   | Description      |  Return |
+|----------|:-------------:|------:|
+| (filesSelected) | Occurs when the files are changed.  | [FileList](https://developer.mozilla.org/en-US/docs/Web/API/FileList) |
