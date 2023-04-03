@@ -1,5 +1,5 @@
 {
-  "name": "@allstarsmen/ngx-simple-upload-file",
+  "name": "ngx-simple-upload",
   "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^15.2.0",
