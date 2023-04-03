@@ -17,8 +17,8 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "paths": {
-      "ngx-simple-upload": [
-        "dist/ngx-simple-upload"
+      "ngx-simple-upload-file": [
+        "dist/ngx-simple-upload-file"
       ]
     },
     "target": "ES2022",

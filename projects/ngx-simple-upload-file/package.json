@@ -1,6 +1,6 @@
 {
-  "name": "ngx-simple-upload",
-  "version": "0.0.1",
+  "name": "@nampham/ngx-simple-upload-file",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^15.2.0",
     "@angular/core": "^15.2.0",

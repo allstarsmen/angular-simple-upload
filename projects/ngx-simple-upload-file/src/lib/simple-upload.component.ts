@@ -1,11 +1,11 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
-  selector: 'lib-ngx-simple-upload',
+  selector: 'ngx-simple-upload-file',
   templateUrl: './simple-upload.component.html',
   styleUrls: ['./simple-upload.component.scss']
 })
-export class SimpleUploadComponent {
+export class SimpleUploadFileComponent {
   @Input() requiredFileType = ''
   @Input() multiple = false
   @Input() btnIcon = 'attach_file'

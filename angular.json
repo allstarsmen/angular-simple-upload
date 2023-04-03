@@ -3,23 +3,23 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-simple-upload": {
+    "ngx-simple-upload-file": {
       "projectType": "library",
-      "root": "projects/ngx-simple-upload",
-      "sourceRoot": "projects/ngx-simple-upload/src",
+      "root": "projects/ngx-simple-upload-file",
+      "sourceRoot": "projects/ngx-simple-upload-file/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/ngx-simple-upload/ng-package.json"
+            "project": "projects/ngx-simple-upload-file/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngx-simple-upload/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx-simple-upload-file/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/ngx-simple-upload/tsconfig.lib.json"
+              "tsConfig": "projects/ngx-simple-upload-file/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -27,7 +27,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/ngx-simple-upload/tsconfig.spec.json",
+            "tsConfig": "projects/ngx-simple-upload-file/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"
@@ -38,8 +38,8 @@
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "lintFilePatterns": [
-              "projects/ngx-simple-upload/**/*.ts",
-              "projects/ngx-simple-upload/**/*.html"
+              "projects/ngx-simple-upload-file/**/*.ts",
+              "projects/ngx-simple-upload-file/**/*.html"
             ]
           }
         }
