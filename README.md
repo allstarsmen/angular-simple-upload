@@ -14,13 +14,13 @@ This project was built for fun and to learn how to create a library in Angular.
 - Angular Material UI Version 15
 
 ## Installation
-> npm i ngx-simple-upload
+    npm i ngx-simple-upload
 
 ## Usage
 [Read more here.](https://github.com/allstarsmen/angular-simple-upload/tree/main/projects/ngx-simple-upload-file)
 
 ## Contributing
-This project was built based on (the tutorial of creating libraries in Angular)[https://angular.io/guide/creating-libraries].
+This project was built based on [the tutorial of creating libraries in Angular](https://angular.io/guide/creating-libraries).
 
 Please go through [it](https://angular.io/guide/creating-libraries) before starting coding.
 
